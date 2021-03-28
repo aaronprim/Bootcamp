@@ -1,0 +1,261 @@
+
+.container {
+    display: flex;
+    width: 1000px;
+    height: 1000px;
+
+    font-family: sans-serif;
+    justify-items: center;
+    vertical-align: top;
+
+    
+}
+    .nav_bar {
+        height: 50Px;
+        width: 1000px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 2px;
+        margin-bottom: 2px;
+        background-color: rgb(64, 61, 61);
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        vertical-align: middle;
+        position: fixed;
+    }
+
+        .nav-links {
+            font-size: 20px;
+            text-decoration-color: white;
+            height: 50%;
+            width: 50%;
+            padding: 2%;
+            margin: 1%;
+            display: flex;
+            justify-items: end;
+            justify-content: space-evenly;
+            align-items: center;
+            vertical-align: middle;
+            color: rgb(64, 61, 61);
+            
+        }
+            ul {
+                text-decoration: none;
+                color: white;
+            }
+            .profile {
+                width: auto;
+                height: auto;
+                font-weight: bold;
+                color: white;
+                font-size: 25px;
+            }
+            .active {
+                width: auto;
+                height: auto;
+                font-weight: bold;
+                color: white;
+                
+            }
+
+            .btn {
+            background-color: rgb(18, 222, 181);
+            font-size: 25px; 
+            color: rgb(255, 255, 255);
+            box-shadow: black;
+            display: flex;
+            justify-content: center;
+            margin-right: 1%;
+            }
+
+    /* end nav bar css */
+
+    .lefthalf {
+        width: 600px; 
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 2px dotted black;
+        margin: 10px;
+
+    }
+        .name_box {
+            width: 560px;
+            height: 500px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-items: left;
+            border: 2px dotted black;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        
+        .profile_pic {
+            border-radius: 50%;
+            position: relative;
+            top: 20px;
+        }
+            
+        .top_banner {
+            width: 560px;
+            height: 50px;
+            background-color: rgb(40, 139, 143);
+            padding: 1px;
+            position: relative;
+            top: -100px;
+        }
+
+        .profile_pic {
+            justify-content: left;
+            float: 20px;
+
+        }
+
+        
+
+
+
+        .word_box {
+            width: 100%;
+            height: 50%;
+            margin-top: 10%;
+            border: 2px dotted black;
+
+        }
+
+        
+        h1 {
+            margin-left: 0%;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 1px;
+            
+        }
+
+        .location {margin-left: 10%;}
+
+        h3 {
+            font-size: 16px;
+            
+        }
+
+        .link {
+            height: 20px;
+            width: auto;
+            margin-top: 50px;
+            display: flex;
+            justify-items: baseline;
+            justify-items: left;
+            margin-left: 10%;
+            
+
+        }
+        
+            .education_box {
+                margin: 15%;
+                margin: 4%;
+                justify-content: left;
+                padding: 5px;
+                color: black;
+                border: 2px dotted black;
+                flex-direction: column;
+            }
+                .education_title {
+                    padding: 1px;
+                    margin: 1px;
+                }
+
+                .list {
+                    color: black;
+                }
+
+        /* end name box css */
+
+    .righthalf {
+        width: 400px;
+        height: 1000px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 2px dotted black;
+
+    }
+
+        .requests_box {
+            width: 320px;
+            height: 400px;
+            margin: 5%;
+            border: 2px dotted black;
+            color: black;
+            display: flex;
+            flex-direction: column;
+        }
+            .todd{ border-radius: 50%}
+
+            .phil{ border-radius: 50%;}
+
+            .title_requests {
+                background-color: black;
+                color: white;
+                margin: 5px;
+                
+            }
+            .request_names {
+                color: black;
+                list-style: none;
+                flex-direction: column;
+                display: flex;
+                justify-content: space-between;
+                
+
+            }
+
+            
+
+        .connections_box {
+            width: 320px;
+            height: 400px;
+            margin: 5%;
+            border: 2px dotted black;
+            justify-content: space-evenly;
+            color: black;
+            
+        }
+
+            h1 {
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: 30px;
+            }
+            .adrien{ border-radius: 50%}
+            .anne{ border-radius: 50%}
+            .alayne{ border-radius: 50%}
+            .arry{ border-radius: 50%}
+
+            .title_connections {
+                background-color: black;
+                color: white;
+                margin-right: 0%;
+                margin-left: 0%;
+            }
+
+            .connection_names {
+                color: black;
+                list-style-type: none;
+            }
+
+            h3 {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+ 
+/*pesticide*/ 
