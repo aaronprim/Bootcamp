@@ -17,10 +17,10 @@
     }
 
 var p1 = pizzaOven("deep dish", "traditional", "mozzarealla", ["pepperoni", "sausage"]);
-console.log(p1)
+console.log(p1);
 
 var p2 = pizzaOven("hand tossed", "marinara", ["mozzarealla", "feta"], ["mushrooms", "olives", "onions"]);
-console.log(p2)
+console.log(p2);
 
 
 
