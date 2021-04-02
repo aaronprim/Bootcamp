@@ -1,0 +1,272 @@
+.nav_bar {
+    height: 50Px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    margin: 2px;
+    margin-bottom: 2px;
+    background-color: rgb(98, 95, 95);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin: 0 auto;
+    justify-items: center;
+    position: fixed;
+    
+}
+
+
+.nav-links {
+    font-size: 20px;
+    text-decoration-color: white;
+    height: 50%;
+    width: 50%;
+    padding: 2%;
+    margin: 1%;
+    display: flex;
+    justify-items: end;
+    justify-content: space-evenly;
+    align-items: center;
+    vertical-align: middle;
+    color: rgb(64, 61, 61);
+    list-style: none;
+    
+}
+    ul {
+        text-decoration: none;
+        color: white;
+    }
+    .profile {
+        width: auto;
+        height: auto;
+        font-weight: bold;
+        color: white;
+        font-size: 25px;
+    }
+    .active {
+        width: auto;
+        height: auto;
+        font-weight: bold;
+        color: white;
+        
+    }
+
+    .btn {
+    background-color: rgb(18, 222, 181);
+    font-size: 25px; 
+    color: rgb(255, 255, 255);
+    box-shadow: black;
+    display: flex;
+    justify-content: center;
+    margin-right: 1%;
+    }
+
+/* end nav bar css */
+
+.container {
+    display: flex;
+    width: 1000px;
+    height: 1000px;
+
+    font-family: sans-serif;
+    justify-items: center;
+    vertical-align: top;
+    margin: 0 auto;
+
+
+    
+}
+        
+
+
+    .lefthalf {
+        width: 600px; 
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        margin: 10px;
+
+    }
+        .name_box {
+            width: 560px;
+            height: 500px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-items: left;
+            border: 4px solid grey;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        .top_banner {
+            width: 560px;
+            height: 50px;
+            background-color: rgb(40, 139, 143);
+            padding: 1px;
+            position: relative;
+            top: -100px;
+        }
+        
+        .profile_pic {
+            border-radius: 50%;
+            position: relative;
+            top: 20px;
+            float: 20px;
+        }
+            
+
+        .profile_pic {
+            justify-content: left;
+            float: 20px;
+
+        }
+
+        
+
+
+
+        .word_box {
+            width: 100%;
+            height: 50%;
+            margin-top: 10%;
+            
+
+        }
+
+        
+        h1 {
+            margin-left: 0%;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 1px;
+            
+        }
+
+        .location {margin-left: 10%;}
+
+        h3 {
+            font-size: 16px;
+            
+        }
+
+        .link {
+            height: 20px;
+            width: auto;
+            margin-top: 50px;
+            display: flex;
+            justify-items: baseline;
+            justify-items: left;
+            margin-left: 10%;
+            
+
+        }
+        
+            .education_box {
+                margin: 15%;
+                margin: 4%;
+                justify-content: left;
+                padding: 5px;
+                color: black;
+                border: 4px solid grey;
+                flex-direction: column;
+            }
+                .education_title {
+                    padding: 1px;
+                    margin: 1px;
+                }
+
+                .list {
+                    color: black;
+                }
+
+        /* end name box css */
+
+    .righthalf {
+        width: 400px;
+        height: 1000px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+
+    }
+
+        .requests_box {
+            width: 320px;
+            height: 400px;
+            margin: 5%;
+            border: 4px solid grey;
+            color: black;
+            display: flex;
+            flex-direction: column;
+        }
+            .todd{ border-radius: 50%}
+
+            .phil{ border-radius: 50%;}
+
+            .title_requests {
+                background-color: black;
+                color: white;
+                margin: 5px;
+                
+            }
+            .request_names {
+                color: black;
+                list-style: none;
+                flex-direction: column;
+                display: flex;
+                margin-bottom: 15px;
+                justify-content: space-between;
+                
+
+            }
+
+            
+
+        .connections_box {
+            width: 320px;
+            height: 400px;
+            margin: 5%;
+            border: 4px solid grey;
+            justify-content: space-evenly;
+            color: black;
+            
+        }
+
+            h1 {
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: 30px;
+            }
+            .adrien{ border-radius: 50%}
+            .anne{ border-radius: 50%}
+            .alayne{ border-radius: 50%}
+            .arry{ border-radius: 50%}
+
+            .title_connections {
+                background-color: black;
+                color: white;
+                margin-right: 0%;
+                margin-left: 0%;
+            }
+
+            .connection_names {
+                color: black;
+                list-style-type: none;
+            }
+
+            h3 {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+
