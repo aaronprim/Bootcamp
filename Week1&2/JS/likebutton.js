@@ -1,8 +1,15 @@
-var quantityLikes = document.querySelector("#likes");
+var quantityNeil = document.querySelector("#likesNeil");
+var quantityNichole = document.querySelector("#likesNichole");
+var quantitySadie = document.querySelector("#likesSadie");
 
-function like(){
-    quantityLikes.innerText++;
+function likeNeil(){
+    quantityNeil.innerText++;
 }
 
+function likeNichole(){
+    quantityNichole.innerText++;
+}
 
-
+function likeSadie(){
+    quantitySadie.innerText++;
+}
