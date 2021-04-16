@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New User</title>
+    <title>Edit User</title>
 </head>
 
-<h1>Add a New User</h1>
-<form action="/users/new" method="POST">
+<h1>Edit User</h1>
+<form action="/edit/{{one_user['id']}}" method="POST">
     <p>First Name: <input type="text" name="fname"></p>
     <p>Last Name: <input type="text" name="lname"></p>
     <p>Email: <input type="text" name="email"></p>
-    <input type="submit" value="Create User">
+    <input type="submit" value="Update User">
 </form>

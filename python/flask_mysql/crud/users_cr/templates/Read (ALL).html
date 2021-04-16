@@ -9,9 +9,8 @@
 
 <h1>All Users</h1>
 {% for one_user in all_users %}
-    <p>First Name: {{one_user["first_name"]}}</p>
-    <p>Last Name: {{one_user["last_name"]}}</p>
+    <p>ID: {{one_user["id"]}} Name: {{one_user["first_name"]}} {{one_user["last_name"]}}</p>
     <p>Email: {{one_user["email"]}}</p>
+    <p>Actions: <a href="/show/{{one_user['id']}}"> Show |</a> <a href="/editor/{{one_user['id']}}"> Edit |</a>  <a href="/delete/{{one_user['id']}}"> Delete </a> </p>
     <hr>
 {% endfor %}
-
