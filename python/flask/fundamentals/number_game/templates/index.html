@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Guessing Game</title>
+</head>
+
+<body>
+    <h1>Welcome to the Number Game!
+    </h1>
+
+    <h3>Pick a number between 0-100</h3>
+
+    <form action='/check' method='post'>
+    Type your guess: <input type="text" name='input_guess'>
+    </form>
+    <br>
+
+
+    <div>
+        {{text}}
+    </div>
+</body>
