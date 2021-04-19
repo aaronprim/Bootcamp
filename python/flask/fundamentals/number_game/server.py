@@ -20,12 +20,12 @@ def check_guess():
     if user_guess == random:
         text= "Great Guess!"
         session.clear()
-        return render_template(index.html, text=text)
+        return render_template("index.html", text=text)
 
     if user_guess >= random:
         text= "Sorry, too high!"
         session.clear()
-        return render_template(index.html, text=text)
+        return render_template("index.html", text=text)
 
     if user_guess <= random:
         text = "Sorry, too low!"
