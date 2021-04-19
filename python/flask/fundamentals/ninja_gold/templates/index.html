@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ninja Gold</title>
+</head>
+
+<body>
+    <h1>Ninja Gold</h1>
+
+    <div>Gold Count: {{gold}}</div>
+
+    <div class=locations style= "display: inline-block"> 
+        <form action="/process_money" method='post'>
+
+            <div class= locale>
+                <h3>Farm</h3>
+                <p>Collect 10-20 gold!</p>
+                <button type="submit" class= "button" name="button" value= "farm"> Find Gold </button>
+            </div>
+
+            <div class= locale>
+                <h3>Cave</h3>
+                <p>Collect 5-10 gold!</p>
+                <button type="submit" name="button" value= "cave"> Find Gold </button>
+            </div>
+
+            <div class= locale>
+                <h3>House</h3>
+                <p>Collect 2-5 gold!</p>
+                <button type="submit" name="button" value= "house"> Find Gold </button>
+            </div>
+
+            <div class= locale>
+                <h3>Casino</h3>
+                <p>Collect or lose 0-100 gold! Are you sure?</p>
+                <button type="submit" name="button" value= "casino"> Find Gold </button>
+            </div>
+        </form>
+    </div>
+    <div class= "activity_log">
+        <p> Activity Log:</p>
+        <div class= "text-area">
+            {% for log in activity_log %} 
+                {{log|safe}}
+            {% endfor %}
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
