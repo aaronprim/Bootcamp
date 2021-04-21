@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login and Registration</title>
+</head>
+
+<body>
+    <h1>Login and Registration</h1>
+    
+    <div class=container>
+    
+        <div class=left>
+            <h3> Register here!</h3>
+            {% with messages = get_flashed_messages(category_filter=['top']) %}
+                {% if messages %}
+                    {% for message in messages %}
+
+                    <div> {{message}} </div>
+
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}                
+            {% with messages = get_flashed_messages(category_filter=['success']) %}
+                {% if messages %}
+                    {% for message in messages %}
+
+                    <div> {{message }} </div>
+
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <form action="/validate_registration" method="post">
+                First Name: 
+                {% with messages = get_flashed_messages(category_filter=['first_name']) %}
+                    {% if messages %}
+                        {% for message in messages %}
+
+                        <div> {{message}} </div>
+
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %} 
+                <input type="text" name='first_name'>
+                <br>
+                Last Name:
+                {% with messages = get_flashed_messages(category_filter=['last_name']) %}
+                    {% if messages %}
+                        {% for message in messages %}
+
+                        <div> {{message}} </div>
+
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}   
+                <input type="text" name="last_name">
+                <br>                
+                Email Address:
+                {% with messages = get_flashed_messages(category_filter=['email']) %}
+                    {% if messages %}
+                        {% for message in messages %}
+
+                        <div> {{message}} </div>
+
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}   
+                <input type="text" name="email">
+                <br>
+                Password
+                {% with messages = get_flashed_messages(category_filter=['password']) %}
+                    {% if messages %}
+                        {% for message in messages %}
+
+                        <div> {{message}} </div>
+
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}   
+                <input type="text" name='password'>
+                <br>
+                Confirm password: <input type="text" name='confirm_password'>
+                <br>
+                <button type='submit' value="submit"> Register </button>
+        
+            </form>
+        </div>
+    
+        <div class=right>
+            <h3> Login Here!</h3>
+
+            {% with messages = get_flashed_messages(category_filter=['login_top']) %}
+                {% if messages %}
+                    {% for message in messages %}
+
+                        <div> {{message}} </div>
+
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}  
+            
+            <form action="/validate_login" method='post'>
+                Email: <input type="text" name='email'>
+                <br>
+                Password: <input type="text" name='password'>
+                <br>
+                <button type="submit" value="submit"> Login </button>
+            </form>
+    
+        </div>
+    
+    </div>
+    
+</body>
