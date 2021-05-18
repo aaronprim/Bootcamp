@@ -60,7 +60,7 @@ def edit(user_id):
 
 @app.route('/editor/<int:user_id>')
 def editor(user_id):
-    query = "UPDATE users SET (first_name = %(fn)s, last_name = %(ln)s, email = %(em)s, updated_at = NOW () HERE id = %(id)s;"
+    query = "UPDATE users SET (first_name, last_name, email, updated_at, id;) VALUE (%(fn)s, %(ln)s, %(em)s, NOW() )"
     data = {
         'fn': request.form["fname"],
         'ln': request.form["lname"],
