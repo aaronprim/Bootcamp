@@ -1,0 +1,24 @@
+cheat sheet
+
+connection to the db - mysql - the instance of the MySQLConnection class
+
+query string - "INSERT INTO ..." - the string that will eventually be executed on our MySQL server
+
+data dictionary - the values that will be interpolated into the query string
+
+data dictionary keys - fn, id_num - the keys of the data dictionary used in the query string with %-interpolation
+(i.e. %(key_name)s)
+
+route - /create_friend - the route that will handle the submission of the form
+
+method - POST - the type of request, generally a POST request
+
+input names - fname, lname, occ - the names on all input fields that will become the keys of the request.form dictionary
+
+connection to the db - mysql - the instance of the MySQLConnection class
+
+query string - "INSERT INTO ..." - the string that will eventually be executed on our MySQL server
+
+data dictionary - the values that will be interpolated into the query string
+
+data dictionary keys - fn, ln, occup - the keys of the data dictionary used in the query string with %-interpolation (i.e. %(key)s)
