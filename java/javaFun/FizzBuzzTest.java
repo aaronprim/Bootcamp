@@ -7,7 +7,7 @@ public class FizzBuzzTest {
         System.out.println(outputTwo);
         String outputThree = fB.fizzBuzz(15);
         System.out.println(outputThree);
-        String outputFour = fB.fizzBuzz(2);
+        String outputFour = fB.fizzBuzz(7);
         System.out.println(outputFour);
     }
 }
